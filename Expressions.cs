@@ -62,6 +62,7 @@ namespace Assignment_0
             int correctAnswer = userInputOne * userInputTwo;
             if (userAnswer == correctAnswer)
             {
+                Console.WriteLine($"Your input of {userInputOne.ToString()} * {userInputTwo.ToString()} = {userAnswer.ToString()} is correct!");
                 correctCounter++;
                 return 1;
             }
