@@ -1,4 +1,6 @@
-﻿using System;
+// Walker Chesley
+// 09/03/2019
+using System;
 namespace Assignment_0
 {
     class Program
