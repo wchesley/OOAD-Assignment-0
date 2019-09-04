@@ -12,6 +12,7 @@ namespace Assignment_0
         {
             get; set; 
         }
+        //Reads expression from end user, verifies it's a multiply expression.
         public static int ReadExpression(out int userInputOne, out int userInputTwo, out int userAnswer)
         {
             string input = null;
@@ -37,6 +38,9 @@ namespace Assignment_0
                 return 0; 
             }
         }
+        //Takes a verified multiply expression and parses out the extra characters, returning an array of numbers
+        //where index[0] is the first number in the expression, index[1] is the second, and index[3] is the user given answer
+        //assumes all inputs will be the standard 5*6=30 format
         public static int[] ParseInput(string input)
         {
 
@@ -57,6 +61,7 @@ namespace Assignment_0
             }
             return inputExpressions;
         }
+        // CheckExpression takes the formatted numbers from Main and verifies the answer, if correct, bumps score else score remains the same
         public static int CheckExpression(int userInputOne, int userInputTwo, int userAnswer)
         {
             int correctAnswer = userInputOne * userInputTwo;

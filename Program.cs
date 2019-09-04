@@ -1,4 +1,4 @@
-// Walker Chesley
+﻿// Walker Chesley
 // 09/03/2019
 using System;
 namespace Assignment_0
@@ -19,7 +19,6 @@ namespace Assignment_0
                 {
                     case 'a':
                         Expressions.ReadExpression(out argOne, out argTwo, out answer);
-                        //Expressions.totalCounter++;
                     break;
                     case 'b':
                         Expressions.CheckExpression(argOne, argTwo, answer);
